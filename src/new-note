@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+### Script to create a new note.
+
+FILETYPE=org
+FILENAME=$NOTES_DIR/$(date +%F-%H-%M-%S).$FILETYPE
+touch $FILENAME
+echo $FILENAME
