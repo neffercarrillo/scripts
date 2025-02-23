@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+PREFERRED_LANG=python
+cat ~/workspace/repos/local/templates/$PREFERRED_LANG/script >> $BIN_DIR/$1
+chmod u+x $BIN_DIR/$1
+$EDITOR $BIN_DIR/$1
